@@ -1,1 +1,31 @@
 create database loja;
+---------------------next step---------------------
+use loja;
+create table produtos(
+id int not null auto_increment primary key,
+produto varchar(100),
+categoria varchar(100),
+marca varchar(100),
+modelo varchar(100),
+preco double,
+data date
+);
+---------------------next step---------------------
+use loja;
+insert into produtos (produto,categoria,marca,modelo,preco,data)
+values('Carro','Veículo','Fiat','Uno',33.900.00,'2016-11-23');
+---------------------next step---------------------
+use loja;
+create table clientes(
+id int not null auto_increment primary key,
+nome varchar(100),
+endereco varchar(100),
+tel int,
+status_pedido boolean,
+nascimento date
+);
+---------------------next step---------------------
+use loja;
+insert into clientes (nome,endereco,tel,status_pedido,nascimento)
+values('John','Rua...',9xxxx-xxxx,0,'1990-03-23');
+---------------------next step---------------------
