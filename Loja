@@ -1,5 +1,8 @@
+//Cria um banco de dados
 create database loja;
 ---------------------next step---------------------
+//Usa o banco criado e adiciona uma tabela com colunas para que sejam preenchidos manualmente ou pelo software/php que interagem com este
+banco de dados.
 use loja;
 create table produtos(
 id int not null auto_increment primary key,
@@ -11,10 +14,12 @@ preco double,
 data date
 );
 ---------------------next step---------------------
+//insere os dados manualmente no banco de dados na tabela que foi criado anteriormente.
 use loja;
 insert into produtos (produto,categoria,marca,modelo,preco,data)
 values('Carro','Veículo','Fiat','Uno',33.900.00,'2016-11-23');
 ---------------------next step---------------------
+//adiciona mais uma tabela para mais informações.
 use loja;
 create table clientes(
 id int not null auto_increment primary key,
@@ -25,6 +30,7 @@ status_pedido boolean,
 nascimento date
 );
 ---------------------next step---------------------
+//insere os dados manualmente no banco de dados na tabela que foi criado anteriormente.
 use loja;
 insert into clientes (nome,endereco,tel,status_pedido,nascimento)
 values('John','Rua...',9xxxx-xxxx,0,'1990-03-23');
